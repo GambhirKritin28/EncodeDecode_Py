@@ -1,0 +1,50 @@
+import random
+import string
+
+s=input("Enter the string: ")
+words=s.split()
+count=len(words)
+
+val=int(input("Encode(1) or Decode(2): "))
+if val==1:
+   for i in range(1,count+1):
+      if(i.len()>=3):
+         first =i[0]
+         i=i[1:]+first
+         start_chars = ''.join(random.choice(string.ascii_letters) k=(3))
+          end_chars = ''.join(random.choice(string.ascii_letters) k=(3))
+          i=start_chars+i+end_chars
+          print(i,"\t")
+   elif(i.len()==2):
+      first=i[0]
+      i=i[1:]+first
+      print(i,"\t")
+   else:
+      print(i,"\t")
+      
+else:
+   for i in range(1,count+1):
+       if(i.len()>=9):
+          i.pop(0)
+           i.pop(0)
+           i.pop(0)
+           i.pop(i.len()-1)
+           i.pop(i.len()-1)
+           i.pop(i.len()-1)
+           last=i[i.len()-1]
+          i.pop(i.len()-1)
+           i=last+i[0:]
+           print(i,"\t")
+
+       elif(i.len()==2):
+           first=i[0]
+           i=i[1:]+first
+           print(i,"\t")
+       else:
+           print(i,"\t")
+
+
+
+
+                      
+    
